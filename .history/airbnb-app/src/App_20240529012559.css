@@ -1,0 +1,242 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.nav-container {
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-secciones{
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+
+}
+
+.navbar-secciones a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar-secciones a.activo {
+  font-weight: bold;
+}
+
+.navbar-secciones a:hover {
+  font-weight: bold;
+  color: gray;
+}
+
+/* Alojamiento Container */
+.container{
+  padding: 2rem;
+}
+
+.container-alojamientos {
+  font-size: 18px;
+  text-align: center;
+}
+
+.container-
+
+/*CARDS */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 80px;
+
+}
+
+.cards .card{
+    width: 25%;
+    background-color: rgba(255, 56, 92, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    margin: 20px;    
+    cursor: pointer;
+    transition: all 400ms ease; 
+}
+
+.cards .card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3%);
+}
+
+.cards .card img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.cards .card h2{
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+  padding: 10px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-footer-primeralinea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.lenguaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lenguaje p {
+  margin-left: 10px;
+}
+
+.redes-logos img{
+  margin: 5px;
+}
+
+.container-footer-segundalinea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 100px;
+}
+
+
+.container-footer-segundalinea a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+  
+/* Estilos para el cuadro VER BEL*/
+.cuadro {
+    width: 800px; 
+    padding: 20px; /* Espacio interno */
+    background-color: pink; 
+    border-radius: 20px; 
+    text-align: center; /* Centrar texto */
+    margin: 0 auto; /* Centrar horizontalmente */
+    font-family: "Poppins", sans-serif;
+}
+
+.cuadro p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Contactos */
+h2 {
+    width: 80%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    border-radius: 10px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+.contenedor {
+    padding: 6.25rem 0; 
+    background-color:  #f7f7f7;
+    position: relative;
+}
+
+.cuadro {
+    width: 80%;
+    max-width: 37.5rem;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    padding: 1.25rem;
+    background-color: pink;
+    border-radius: 1rem;
+    text-align: left;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2); 
+}
+
+.label {
+    position: relative;
+    display: block;
+    margin-bottom: 0.5rem; 
+    color: #666;
+    font-size: 0.875rem; 
+    text-align: left;
+}
+
+.casilla {
+    all: unset;
+    background-color: #f7f7f7;
+    width: 95%;
+    padding: 0.625rem; 
+    margin-bottom: 1.25rem; 
+    border: 0.1875rem solid #ffffff; 
+    border-radius: 0.9375rem; 
+    transition: 0.3s ease;
+}
+
+.casilla:focus {
+    border-color: #ffc0c0;
+}
+
+.cuadro .boton-container {
+    text-align: center; 
+}
+
+.cuadro button {
+    border: none;
+    border-radius: 1.25rem; 
+    padding: 0.6875rem 2.1875rem; 
+    background-color: #fff3f3;
+    color: #676767;
+    text-transform: uppercase;
+}
+
+.cuadro button:hover {
+    background-color: #f99f9f;
+}
+
+.mapa {
+  width: 80%;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mapa iframe {
+  border-radius: 20px;
+  filter: hue-rotate(90deg);
+}
