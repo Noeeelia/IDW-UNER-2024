@@ -1,18 +1,20 @@
 import React from 'react';
 import '../App.css';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
   return (
-    <div class="nav-container">
-        <nav class="navbar">
-            <a class="navbar-logo" href="/">
+    <div className="nav-container">
+        <nav className="navbar">
+            <NavLink className="navbar-logo" to="/">
                 <img src="./images/logo-airbnb (2) 1.png" width="120" alt="Logo de la página web" />
-            </a>
-            <ul class="navbar-secciones">
-                <li><a href="/" class="activo">Inicio</a></li>
-                <li><a href="/" class="">Quiénes somos</a></li>
-                <li><a href="/" class="">Contacto</a></li>
+            </NavLink>
+            <ul className="navbar-secciones">
+                <li><NavLink to="/" className={({ isActive }) => isActive ? 'nav-link activo' : 'nav-link'} exact>Inicio</NavLink></li>
+                <li><NavLink to="/organizacion" className={({ isActive }) => isActive ? 'nav-link activo' : 'nav-link'}>Quiénes somos</NavLink></li>
+                <li><NavLink to="/contacto" className={({ isActive }) => isActive ? 'nav-link activo' : 'nav-link'}>Contacto</NavLink></li>
+                <li><NavLink to="/administracion" className={({isActive}) => isActive ? ' activo' : 'nav-link'}><img src='./images/icon-Admin.svg' alt="Icono-Administracion"/></NavLink></li>
             </ul>
         </nav>
     </div>
