@@ -12,7 +12,7 @@ const Home = () => {
 
         <div class="cards">
             <div class="card">
-                <img src="./images/img-Casa.png" alt="casas" />
+                <img src="./images/img-casa.png" alt="casas" />
                 <h2>Casas</h2>
             </div>
 
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
 
             <div class="card">
-                <img src="./images/img-Cabañas.png" alt="cabañas" />  
+                <img src="./images/img-cabañas.png" alt="cabañas" />  
                 <h2>Cabañas</h2>
             </div>
 
