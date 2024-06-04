@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Contacto from './components/Contacto';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Home /> 
-      <Footer />  
+      <Footer /> 
+      <Contacto/> 
     </div>
   );
 };
