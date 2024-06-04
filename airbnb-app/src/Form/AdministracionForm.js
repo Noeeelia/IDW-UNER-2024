@@ -1,8 +1,8 @@
 // AdministracionForm.js
 import React, { useState } from 'react';
-import './AdministracionForm.css';
+import '../styleForms.css';
 
-const AdministracionForm = () => {
+const Administracion = () => {
   const [formData, setFormData] = useState({
     titulo: '',
     descripcion: '',
@@ -67,45 +67,46 @@ const AdministracionForm = () => {
   };
 
   return (
-    <div className="form-container">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <>
       <section className="formulario">
         <h2>Registrar Alojamiento</h2>
-
-        <div className="scrollbar">
-          <div className="cuadro">
-            <form onSubmit={handleSubmit}>
-              {Object.keys(formData).map((key) => (
-                <div className="form-group" key={key}>
-                  <label className="label" htmlFor={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
-                  {key === 'descripcion' ? (
-                    <textarea className="casilla" id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
-                  ) : key === 'tipoAlojamiento' ? (
-                    <select className="casilla" id={key} name={key} value={formData[key]} onChange={handleChange} required>
-                      <option value="">Tipo de Alojamiento</option>
-                      <option value="casa">Casa</option>
-                      <option value="departamento">Departamento</option>
-                      <option value="habitacion">Habitación</option>
-                    </select>
-                  ) : (
-                    <input className="casilla" type={key === 'precioPorDia' || key === 'latitud' || key === 'longitud' ? 'text' : key === 'dormitorios' || key === 'baños' ? 'number' : 'text'} id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
-                  )}
-                </div>
-              ))}
-              <div className="boton-container">
-                <button type="submit">{editIndex !== null ? 'Guardar cambios' : 'Registrar'}</button>
+        <div className="cuadro">
+          <form onSubmit={handleSubmit}>
+            <div className="form-row">
+              <div className="form-column">
+                {['titulo', 'tipoAlojamiento', 'latitud', 'precioPorDia', 'dormitorios'].map((key) => (
+                  <div className="form-group" key={key}>
+                    <label className="label" htmlFor={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
+                    {key === 'tipoAlojamiento' ? (
+                      <select className="casilla" id={key} name={key} value={formData[key]} onChange={handleChange} required>
+                        <option value="">Tipo de Alojamiento</option>
+                        <option value="casa">Casa</option>
+                        <option value="departamento">Departamento</option>
+                        <option value="habitacion">Habitación</option>
+                      </select>
+                    ) : (
+                      <input className="casilla" type={key === 'precioPorDia' || key === 'latitud' || key === 'longitud' ? 'text' : key === 'dormitorios' || key === 'baños' ? 'number' : 'text'} id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
+                    )}
+                  </div>
+                ))}
               </div>
-            </form>
-          </div>
+              <div className="form-column">
+                {['descripcion', 'longitud', 'baños', 'estado'].map((key) => (
+                  <div className="form-group" key={key}>
+                    <label className="label" htmlFor={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
+                    {key === 'descripcion' ? (
+                      <textarea className="casilla" id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
+                    ) : (
+                      <input className="casilla" type={key === 'precioPorDia' || key === 'latitud' || key === 'longitud' ? 'text' : key === 'dormitorios' || key === 'baños' ? 'number' : 'text'} id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="boton-container">
+              <button type="submit">{editIndex !== null ? 'Guardar cambios' : 'Registrar'}</button>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -139,11 +140,14 @@ const AdministracionForm = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
-export default AdministracionForm;
+export default Administracion;
+
+
+
 
 
 
