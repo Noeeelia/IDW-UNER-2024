@@ -12,7 +12,7 @@ const Home = () => {
 
         <div class="cards">
             <div class="card">
-                <img src="./images/img-Casa.png" alt="casas" />
+                <img src="./images/img-casa.png" alt="casas" />
                 <h2>Casas</h2>
             </div>
 

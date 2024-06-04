@@ -3,8 +3,9 @@ import './App.css';
 
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import Footer from './components/Footer';
 import Contacto from './components/Contacto';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Home /> 
-      <Footer /> 
       <Contacto/> 
+      <Footer /> 
+      
     </div>
   );
 };
