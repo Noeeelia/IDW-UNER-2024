@@ -242,3 +242,178 @@ h2 {
   border-radius: 20px;
   filter: hue-rotate(90deg);
 }
+
+
+
+
+/* Estilos de Administracion */
+.formulario {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  background-color: pink;
+  overflow: auto;
+  margin-top: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.cuadro {
+  width: 60%;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding: 1.25rem;
+  background-color: rgb(242, 219, 223);
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  width: 80%;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.label {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.casilla {
+  all: unset;
+  background-color: #f7f7f7;
+  width: 90%;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
+  border: 0.1875rem solid #ffffff;
+  border-radius: 0.9375rem;
+  transition: 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.casilla:focus {
+  border-color: #ffc0c0;
+}
+
+#tipoAlojamiento {
+  color: #666;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-moz-outer-spin-button,
+input[type="number"]::-moz-inner-spin-button {
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.boton-container {
+  text-align: center;
+}
+
+.cuadro button {
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.6875rem 2.1875rem;
+  background-color: #fff3f3;
+  color: #676767;
+  text-transform: uppercase;
+}
+
+.cuadro button:hover {
+  background-color: #f99f9f;
+}
+
+.tabla-container {
+  width: 40%;
+  max-width: 400px;
+  margin: 5px auto;
+  float: left;
+  margin-left: 420px;
+  margin-top: 36px;
+}
+
+.contenedor {
+  width: 60%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#datosTabla {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+
+#datosTabla th,
+#datosTabla td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 0.125rem solid #ddd;
+  font-size: 14px;
+}
+
+#datosTabla th {
+  background-color: pink;
+  color: #666;
+}
+
+#datosTabla tbody tr:nth-child(even) {
+  background-color: #fff3f3;
+}
+
+#datosTabla tbody tr:hover {
+  background-color: #ffc0c0;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background-color: #45a049;
+}
