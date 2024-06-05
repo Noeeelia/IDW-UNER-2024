@@ -19,27 +19,38 @@ body {
 }
 
 .navbar-secciones{
-  list-style: none;
+  /* list-style: none; */
   display: flex;
   font-size: 18px;
 
 }
 
-.navbar-secciones a {
+.navbar-secciones li{
+  list-style: none;
   margin-right: 20px;
+}
+
+.navbar-secciones .nav-link {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
   cursor: pointer;
 }
-
-.navbar-secciones a.activo {
-  font-weight: bold;
-}
-
-.navbar-secciones a:hover {
+.navbar-secciones .nav-link:hover {
   font-weight: bold;
   color: gray;
+}
+
+.navbar-secciones .nav-link.activo {
+  font-weight: bold;
+    color: #ff5a5f;
+    text-decoration: underline;
+}
+
+.navbar-secciones .activo img{
+  background-color: #ff5a5f;
+  border-radius: 10px;
+  padding: 7px;
 }
 
 /* Alojamiento Container */
@@ -140,6 +151,7 @@ footer {
 .container-footer-segundalinea a {
   text-decoration: none;
   color: #000000;
+  padding: 10px;
 }
 
 

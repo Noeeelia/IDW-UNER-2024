@@ -22,12 +22,12 @@ const Home = () => {
             </div>
 
             <div class="card">
-                <img src="./images/img-Cabañas.png" alt="cabañas" />  
+                <img src="./images/img-Cabaña.png" alt="cabañas" />  
                 <h2>Cabañas</h2>
             </div>
 
             <div class="card">
-                <img src="./images/img-Habitaciones.png" alt="habitaciones" />
+                <img src="./images/img-Habitacion.png" alt="habitaciones" />
                 <h2>Habitaciones</h2>
             </div>
 
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
 
             <div class="card">
-                <img src="./images/img-Mansión.png" alt="Mansiones" />
+                <img src="./images/img-Mansion.png" alt="Mansiones" />
                 <h2>Mansiones</h2>
             </div>
         </div>
