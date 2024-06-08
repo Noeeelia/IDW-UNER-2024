@@ -6,7 +6,7 @@ const Organizacion = () => {
     <section className="container">
       <div className="container-quienes">
         <h2>¿Quiénes somos?</h2>
-        <div className="cuadro">
+        <div className="cuadro-quienes">
           <p>
             Somos Airbnb, una plataforma en línea dedicada a facilitar el
             alquiler de alojamientos a corto plazo y a conectar a anfitriones y
@@ -18,7 +18,7 @@ const Organizacion = () => {
         </div>
 
         <h2>Misión</h2>
-        <div className="cuadro">
+        <div className="cuadro-quienes">
           <p>
             Nuestra misión es inspirar la exploración, fomentar la conexión
             humana y enriquecer las experiencias de viaje. Nos comprometemos a
@@ -30,7 +30,7 @@ const Organizacion = () => {
         </div>
 
         <h2>Propósito</h2>
-        <div className="cuadro">
+        <div className="cuadro-quienes">
           <p>
             En Airbnb, creemos en el poder de la hospitalidad y en la belleza de
             la diversidad cultural. Nos esforzamos por crear un mundo donde
