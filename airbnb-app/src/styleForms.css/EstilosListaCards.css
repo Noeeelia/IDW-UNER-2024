@@ -1,0 +1,71 @@
+/*CARDS LIST*/
+.pages-catalogo{
+    text-align: center;
+    font-size: 18px;
+}
+
+.titulos-pages{
+    font-family:  "Poppins", sans-serif;
+    margin-top: 20px;
+}
+
+.volver{
+    font-weight: bold;
+    background-color: blueviolet;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px 80px;
+
+}
+
+.cards-list .card-list{
+width: 25%;
+background-color: rgba(255, 56, 92, 0.3);
+border-radius: 20px;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+margin-bottom: 20px;
+margin: 20px;    
+cursor: pointer;
+transition: all 400ms ease; 
+}
+
+.card-list-description{
+padding: 30px;
+font-weight: 600;
+text-align: left;
+margin-left:10p;
+}
+
+.cards-list .card-list:hover{
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+transform: translateY(-3%);
+}
+
+.cards-list .card-list img{
+width: 100%;
+border-radius: 20px;
+}
+
+
+.cards-list .card-list h2{
+padding: 20px;
+font-weight: 600;
+text-align: center;
+}
+
+.cards-list .card-list a{
+text-decoration:none;
+color: black;
+}
+
+.boton-volver{
+    margin-bottom: 30px;
+}

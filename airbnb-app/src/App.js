@@ -7,12 +7,12 @@ import Organizacion from './components/Organizacion';
 import Contacto from './components/Contacto';
 import Administracion from './components/Administracion';
 import Footer from './components/Footer';
-// import Casas from './components/Casas';
-// import Departamentos from './components/Departamentos';
-// import Cabañas from './components/Cabañas';
-// import Habitaciones from './components/Habitaciones';
-// import Mansiones from './components/Mansiones';
-// import Granjas from './components/Granjas';
+import Casas from './components/Casas';
+import Departamentos from './components/Departamentos';
+import Cabañas from './components/Cabañas';
+import Habitaciones from './components/Habitaciones';
+import Mansiones from './components/Mansiones';
+import Granjas from './components/Granjas';
 
 const Layout = ({ children }) => {
   return (
@@ -32,14 +32,16 @@ const App = () => {
           <Route path='/' exact element={<Layout><Home /></Layout>} />
           <Route path='/organizacion' element={<Layout><Organizacion /></Layout>} />
           <Route path='/contacto' element={<Layout><Contacto/></Layout>} />
-          <Route path='/administracion' element={<Layout><Administracion /></Layout>} />
-
-          {/* <Route path='/Casas' element={ <Casas/>} />
-          <Route path='/Departamentos' element={<Departamentos/>} />
-          <Route path='/Cabañas' element={<Cabañas/>} />
-          <Route path='/Habitaciones' element={<Habitaciones/>} />
-          <Route path='/Mansiones' element={<Mansiones/>} />
-          <Route path='/Granjas' element={<Granjas/>} /> */}
+          <Route path='/administracion' element={<Layout><Administracion/></Layout>} />
+          
+          <Route path='/casas' element={<Layout><Casas/></Layout>} />
+      
+          
+          <Route path='/departamentos' element={<Layout><Departamentos/></Layout>} />
+          <Route path='/cabanas' element={<Layout><Cabañas/></Layout>} />
+          <Route path='/habitaciones' element={<Layout><Habitaciones/></Layout>} />
+          <Route path='/mansiones' element={<Layout><Mansiones/></Layout>} />
+          <Route path='/granjas' element={<Layout><Granjas/></Layout>} />
         </Routes>
       </Router>   
   );
