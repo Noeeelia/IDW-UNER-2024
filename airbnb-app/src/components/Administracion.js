@@ -1,59 +1,60 @@
-// AdministracionForm.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styleForms.css/styleForms.css';
 
 const Administracion = () => {
-  const [formData, setFormData] = useState({
-    titulo: '',
-    descripcion: '',
-    tipoAlojamiento: '',
-    latitud: '',
-    longitud: '',
-    precioPorDia: '',
-    dormitorios: '',
-    baños: '',
-    estado: ''
-  });
-
+  const [formData, setFormData] = useState({ descripcion: '' });
   const [editIndex, setEditIndex] = useState(null);
   const [data, setData] = useState([]);
+  const [idCounter, setIdCounter] = useState(1);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/alojamiento')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error al obtener datos:', error));
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const isEmptyField = Object.values(formData).some((value) => !value);
-    if (isEmptyField) {
-      alert('Por favor, complete todos los campos del formulario.');
+    if (!formData.descripcion) {
+      alert('Por favor, ingrese una descripción.');
       return;
     }
 
     if (editIndex !== null) {
-      const updatedData = data.map((item, index) => (index === editIndex ? formData : item));
-      setData(updatedData);
+      const updatedData = { ...data[editIndex], ...formData };
+
+      // Enviar solicitud PUT para actualizar tipos de alojamientos exitentes
+      await fetch(`http://localhost:3001/tiposAlojamiento/putTipoAlojamiento/:id/${updatedData.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedData),
+      });
+
+      const newData = data.map((item, index) => (index === editIndex ? updatedData : item));
+      setData(newData);
       setEditIndex(null);
     } else {
-      setData([...data, formData]);
+      const newData = { id: idCounter, ...formData };
+
+      // Enviar solicitud POST para crear un nuevo  alojamiento
+      await fetch('http://localhost:3001/tiposAlojamiento/createTipoAlojamiento', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newData),
+      });
+
+      setData([...data, newData]);
+      setIdCounter(idCounter + 1);
     }
 
-    setFormData({
-      titulo: '',
-      descripcion: '',
-      tipoAlojamiento: '',
-      latitud: '',
-      longitud: '',
-      precioPorDia: '',
-      dormitorios: '',
-      baños: '',
-      estado: ''
-    });
+    setFormData({ descripcion: '' });
   };
 
   const handleEdit = (index) => {
@@ -61,74 +62,66 @@ const Administracion = () => {
     setEditIndex(index);
   };
 
-  const handleDelete = (index) => {
+  const handleDelete = async (index) => {
+    const itemToDelete = data[index];
+
+    // Enciar solicitud DELETE para eliminar tipo de alojamiento
+    await fetch(`http://localhost:3001/tiposAlojamiento/deleteTipoAlojamiento/:id/${itemToDelete.id}`, {
+      method: 'DELETE',
+    });
+
     const updatedData = data.filter((_, i) => i !== index);
     setData(updatedData);
+    if (editIndex === index) {
+      setFormData({ descripcion: '' });
+      setEditIndex(null);
+    }
   };
 
   return (
     <>
-      <section className="formulario">
-        <h2>Registrar Alojamiento</h2>
-        <div className="cuadro">
+      <section className="formulario-alojamiento">
+        <h2>Nuevo Tipo de Alojamiento</h2>
+        <div className="cuadro-alojamiento">
           <form onSubmit={handleSubmit}>
             <div className="form-row">
-              <div className="form-column">
-                {['titulo', 'tipoAlojamiento', 'latitud', 'precioPorDia', 'dormitorios'].map((key) => (
-                  <div className="form-group" key={key}>
-                    <label className="label" htmlFor={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
-                    {key === 'tipoAlojamiento' ? (
-                      <select className="casilla" id={key} name={key} value={formData[key]} onChange={handleChange} required>
-                        <option value="">Tipo de Alojamiento</option>
-                        <option value="casa">Casa</option>
-                        <option value="departamento">Departamento</option>
-                        <option value="habitacion">Habitación</option>
-                      </select>
-                    ) : (
-                      <input className="casilla" type={key === 'precioPorDia' || key === 'latitud' || key === 'longitud' ? 'text' : key === 'dormitorios' || key === 'baños' ? 'number' : 'text'} id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
-                    )}
-                  </div>
-                ))}
-              </div>
-              <div className="form-column">
-                {['descripcion', 'longitud', 'baños', 'estado'].map((key) => (
-                  <div className="form-group" key={key}>
-                    <label className="label" htmlFor={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</label>
-                    {key === 'descripcion' ? (
-                      <textarea className="casilla" id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
-                    ) : (
-                      <input className="casilla" type={key === 'precioPorDia' || key === 'latitud' || key === 'longitud' ? 'text' : key === 'dormitorios' || key === 'baños' ? 'number' : 'text'} id={key} name={key} value={formData[key]} onChange={handleChange} placeholder={key.charAt(0).toUpperCase() + key.slice(1)} required />
-                    )}
-                  </div>
-                ))}
+              <div className="form-group">
+                <label className="label" htmlFor="descripcion">Descripción</label>
+                <input
+                  className="casilla-alojamiento"
+                  id="descripcion"
+                  name="descripcion"
+                  value={formData.descripcion}
+                  onChange={handleChange}
+                  placeholder="Ingrese su nuevo tipo de alojamiento"
+                  required
+                />
               </div>
             </div>
-            <div className="boton-container">
+            <div className="boton-container-alojamiento">
               <button type="submit">{editIndex !== null ? 'Guardar cambios' : 'Registrar'}</button>
             </div>
           </form>
         </div>
       </section>
 
-      <section className="tabla">
+      <section className="tabla-alojamiento">
         <div className="contenido-centrado">
-          <div className="tabla-container">
-            <h2>Datos Registrados</h2>
+          <div className="tabla-container-alojamiento">
+            <h2>Alojamientos Registrados</h2>
             <table id="datosTabla">
               <thead>
                 <tr>
-                  {Object.keys(formData).map((key) => (
-                    <th key={key}>{key.charAt(0).toUpperCase() + key.slice(1)}</th>
-                  ))}
+                  <th>ID</th>
+                  <th>Descripción</th>
                   <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 {data.map((item, index) => (
                   <tr key={index}>
-                    {Object.values(item).map((value, i) => (
-                      <td key={i}>{value}</td>
-                    ))}
+                    <td>{item.id}</td>
+                    <td>{item.descripcion}</td>
                     <td>
                       <button className="edit-btn" onClick={() => handleEdit(index)}>Editar</button>
                       <button className="delete-btn" onClick={() => handleDelete(index)}>Eliminar</button>

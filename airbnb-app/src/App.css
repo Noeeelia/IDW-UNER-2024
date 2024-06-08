@@ -159,8 +159,9 @@ footer {
 
   
 /* Estilos para el cuadro VER BEL*/
-.cuadro {
-    width: 800px; 
+.cuadro-quienes {
+    width: 80%;
+    max-width: 37.5rem;
     padding: 20px; /* Espacio interno */
     background-color: pink; 
     border-radius: 20px; 
@@ -169,7 +170,7 @@ footer {
     font-family: "Poppins", sans-serif;
 }
 
-.cuadro p {
+.cuadro-quienes p {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -190,7 +191,7 @@ h2 {
     position: relative;
 }
 
-.cuadro {
+.cuadro-contact {
     width: 80%;
     max-width: 37.5rem;
     margin: 0 auto;
@@ -211,7 +212,7 @@ h2 {
     text-align: left;
 }
 
-.casilla {
+.casilla-contact {
     all: unset;
     background-color: #f7f7f7;
     width: 95%;
@@ -222,15 +223,15 @@ h2 {
     transition: 0.3s ease;
 }
 
-.casilla:focus {
+.casilla-contact:focus {
     border-color: #ffc0c0;
 }
 
-.cuadro .boton-container {
+.cuadro-contact .boton-container {
     text-align: center; 
 }
 
-.cuadro button {
+.cuadro-contact button {
     border: none;
     border-radius: 1.25rem; 
     padding: 0.6875rem 2.1875rem; 
@@ -239,7 +240,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.cuadro button:hover {
+.cuadro-contact button:hover {
     background-color: #f99f9f;
 }
 
