@@ -7,7 +7,7 @@ const Home = () => {
     <section className="container">
       <div className="container-alojamientos">
         <h2>Alojamientos</h2>
-        <h4>Diseñados para tu confort, asegurando descanso y disfrute en completa comodidad</h4>
+        <h4>Diseñados para tu confort, asegurando descanso y disfrute en completa comodidad.</h4>
       </div>
       <div className="cards">
         <div className="card">
