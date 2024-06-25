@@ -64,6 +64,7 @@ const Casas = () => {
         {casas.map((casa) => (
             <div className="card-list" key={casa.id}>
                 <img src={casa.img} alt={casa.alt} />
+                
                 <div className="card-list-description">
                     <h2>{casa.nombre}</h2>
                     <p>{casa.descripcion}</p>

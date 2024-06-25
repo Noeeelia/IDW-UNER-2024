@@ -53,7 +53,7 @@ body {
   padding: 7px;
 }
 
-/* Alojamiento Container */
+/* ALOJAMIENTO CONTAINER */
 .container{
   padding: 2rem;
 }
@@ -284,6 +284,7 @@ footer {
     background-color: #f99f9f;
 }
 
+/* MAPA */
 .mapa {
   width: 80%;
   max-width: 37.5rem;
@@ -299,7 +300,7 @@ footer {
 }
 
 
-/*Estilos para pantallas de teléfonos*/
+/*ESTILOS PARA PANTALLAS DE TELEFONOS*/
 @media (max-width: 425px) {
   .nav-container {
     padding: 0.5rem;
