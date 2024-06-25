@@ -9,6 +9,7 @@ const Home = () => {
         <h2>Alojamientos</h2>
         <h4>Diseñados para tu confort, asegurando descanso y disfrute en completa comodidad.</h4>
       </div>
+      {/* Cards */}
       <div className="cards">
         <div className="card">
           <Link to="/casas" >
