@@ -1,3 +1,4 @@
+/* BODY */
 body {
   height: 100%;
   width: 100%;
@@ -19,7 +20,6 @@ body {
 }
 
 .navbar-secciones{
-  /* list-style: none; */
   display: flex;
   font-size: 18px;
 
@@ -53,7 +53,7 @@ body {
   padding: 7px;
 }
 
-/* Alojamiento Container */
+/* ALOJAMIENTO CONTAINER */
 .container{
   padding: 2rem;
 }
@@ -68,6 +68,16 @@ body {
 }
 
 /*CARDS */
+a {
+  text-decoration: none;
+}
+
+.card h2 {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -101,12 +111,42 @@ body {
 
 .cards .card h2{
     padding: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
     
 }
 
+.linea {
+  display: flex;
+  justify-content: flex-start;
+  align-items:left;
+}
+
+.linea .icons-description {
+  max-width:30px;
+  max-heigth:30px;
+  margin-right:8px;
+}
+
+.disponibilidad {
+  display: flex;
+  justify-content: flex-start;
+  align-items:left;
+  margin:0px;
+  margin-top: 18px;
+}
+.disponibilidad-icon {
+  width: 30px; 
+  height: 30px;
+  margin-left: 0px;
+}
+
+.disponibilidad-text {
+  margin-right: 100px;
+  color: grey;
+  font-weight: bold;
+}
 
 /* FOOTER */
 footer {
@@ -158,7 +198,7 @@ footer {
 
 
   
-/* Estilos para el cuadro VER BEL*/
+/* QUIENES SOMOS */
 .cuadro-quienes {
     width: 80%;
     max-width: 37.5rem;
@@ -175,14 +215,14 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
-/* Contactos */
-h2 {
+/* CONTACTOS */
+.titulos-h2 {
     width: 80%;
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 1.25rem;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     font-family: "Poppins", sans-serif;
 }
 .contenedor {
@@ -244,6 +284,7 @@ h2 {
     background-color: #f99f9f;
 }
 
+/* MAPA */
 .mapa {
   width: 80%;
   max-width: 37.5rem;
@@ -256,4 +297,152 @@ h2 {
 .mapa iframe {
   border-radius: 20px;
   filter: hue-rotate(90deg);
+}
+
+
+/*ESTILOS PARA PANTALLAS DE TELEFONOS*/
+@media (max-width: 425px) {
+  .nav-container {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-secciones{
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: 5px;
+    /*text-align: center;*/
+  }
+  
+  .navbar-logo {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .navbar-secciones li {
+    margin: 5px 0;
+  }
+
+  .navbar-secciones .nav-link {
+    font-size: 14px;
+  }
+
+  .container{
+    padding: 0.5rem;
+  }
+
+  .container-alojamientos {
+    font-size: 12px;
+    padding: 2px;
+    background-color: rgba(255, 56, 92, 0.3);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .container-alojamientos h4 {
+    font-weight: lighter;
+    padding: 10px;
+    padding-top: 0px;
+  }
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .cards .card {
+    width: 100%;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+  }
+
+  .lenguaje p {
+    margin-left: 5px;
+    font-size: 12px; 
+  }
+
+  .redes-logos img{
+    margin: 2.5px;
+  }
+  
+  .footer {
+  }
+
+  .container-footer-primeralinea {
+    font-size: 12px;
+  }
+
+  .container-footer-segundalinea {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .container-footer-segundalinea a {
+    font-size: 12px;
+  }
+
+  .cuadro-quienes {
+   margin-bottom: 10px
+  }
+
+  .cuadro-quienes p {
+  font-size: 14px;
+  }
+
+  h2.titulos-h2 {
+    font-size: 16px;
+    margin: 10px;
+  }
+  section.container {
+    padding-top: 0px;
+  }
+
+  .cuadro-contact {
+    margin-bottom: 10px;
+    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+
+  .cuadro-contact p {
+    font-size: 14px;
+  } 
+
+  .casilla-contact{
+    font-size: 14px;
+  }
+  
+  .boton-container button {
+    font-size: 14px;
+  }
+
+  .card h2 {
+    text-decoration: none;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .icons-description {
+    width:5px;
+  }
+  .disponibilidad {
+    margin-top: 5px;
+    margin-right: 100px;
+  }
+  .linea {
+    
+  }
 }
