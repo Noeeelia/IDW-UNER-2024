@@ -35,35 +35,54 @@ const Contacto = () => {
   return (
     <section className="container-contacto">
       <h2>Contáctanos</h2>
-      <div className="cuadro">
+      <div className="cuadro-contact">
         <p>¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte en cada paso de tu viaje. Nuestro equipo de atención al cliente está disponible las 24/7 para brindarte el apoyo que necesitas. Contáctanos a través de nuestro servicio de atención al cliente o redes sociales. ¡Estamos listos para hacer de tu próxima aventura una experiencia inolvidable!</p>
       </div>
 
       <h2>Déjanos tu consulta</h2>
-      <div className="cuadro">
+      <div className="cuadro-contact">
         <form onSubmit={handleSubmit} id="form">
           <div className="grupo-form">
             <label className="label" htmlFor="nombre"></label>
             <input
-              className="casilla" type="text" id="input_nombre" name="nombre" placeholder="Nombre"
-              value={nombre} onChange={(e) => setNombre(e.target.value)}/>
+              className="casilla-contact"
+              type="text"
+              id="input_nombre"
+              name="nombre"
+              placeholder="Nombre"
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
+            />
           </div>
 
           <div className="grupo-form">
             <label className="label" htmlFor="email"></label>
-            <input className="casilla" type="email" id="input_email" name="email" placeholder="Email"
-              value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input
+              className="casilla-contact"
+              type="email"
+              id="input_email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
-
           <div className="grupo-form">
             <label className="label" htmlFor="consulta"></label>
-            <textarea className="casilla" name="consulta" id="input_consulta" cols="30" rows="10" placeholder="Escriba aquí su mensaje..."
-              value={consulta} onChange={(e) => setConsulta(e.target.value)}></textarea>
+            <textarea
+              className="casilla-contact"
+              name="consulta"
+              id="input_consulta"
+              cols="30"
+              rows="10"
+              placeholder="Escriba aquí su mensaje..."
+              value={consulta}
+              onChange={(e) => setConsulta(e.target.value)}
+            ></textarea>
           </div>
-
           <div className="boton-container">
             <button type="submit">Enviar</button>
-            {/*<button type="button" onClick={limpiarFormulario}>Borrar</button>*/}
+            {/* <button type="button" onClick={limpiarFormulario}>Borrar</button> */}
           </div>
         </form>
       </div>
@@ -78,12 +97,12 @@ const Contacto = () => {
           style={{ border: '0' }}
           allowFullScreen=""
           aria-hidden="false"
-          tabIndex="0"
-        ></iframe>
+          tabIndex="0">
+        </iframe>
       </div>
     </section>
   );
 };
 
-export default Contacto;
 
+export default Contacto;

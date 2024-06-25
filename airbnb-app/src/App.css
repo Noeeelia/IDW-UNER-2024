@@ -19,27 +19,38 @@ body {
 }
 
 .navbar-secciones{
-  list-style: none;
+  /* list-style: none; */
   display: flex;
   font-size: 18px;
 
 }
 
-.navbar-secciones a {
+.navbar-secciones li{
+  list-style: none;
   margin-right: 20px;
+}
+
+.navbar-secciones .nav-link {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
   cursor: pointer;
 }
-
-.navbar-secciones a.activo {
-  font-weight: bold;
-}
-
-.navbar-secciones a:hover {
+.navbar-secciones .nav-link:hover {
   font-weight: bold;
   color: gray;
+}
+
+.navbar-secciones .nav-link.activo {
+  font-weight: bold;
+    color: #ff5a5f;
+    text-decoration: underline;
+}
+
+.navbar-secciones .activo img{
+  background-color: #ff5a5f;
+  border-radius: 10px;
+  padding: 7px;
 }
 
 /* Alojamiento Container */
@@ -90,8 +101,10 @@ body {
 
 .cards .card h2{
     padding: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
+    
 }
 
 
@@ -140,13 +153,15 @@ footer {
 .container-footer-segundalinea a {
   text-decoration: none;
   color: #000000;
+  padding: 10px;
 }
 
 
   
 /* Estilos para el cuadro VER BEL*/
-.cuadro {
-    width: 800px; 
+.cuadro-quienes {
+    width: 80%;
+    max-width: 37.5rem;
     padding: 20px; /* Espacio interno */
     background-color: pink; 
     border-radius: 20px; 
@@ -155,7 +170,7 @@ footer {
     font-family: "Poppins", sans-serif;
 }
 
-.cuadro p {
+.cuadro-quienes p {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -176,7 +191,7 @@ h2 {
     position: relative;
 }
 
-.cuadro {
+.cuadro-contact {
     width: 80%;
     max-width: 37.5rem;
     margin: 0 auto;
@@ -197,7 +212,7 @@ h2 {
     text-align: left;
 }
 
-.casilla {
+.casilla-contact {
     all: unset;
     background-color: #f7f7f7;
     width: 95%;
@@ -208,15 +223,15 @@ h2 {
     transition: 0.3s ease;
 }
 
-.casilla:focus {
+.casilla-contact:focus {
     border-color: #ffc0c0;
 }
 
-.cuadro .boton-container {
+.cuadro-contact .boton-container {
     text-align: center; 
 }
 
-.cuadro button {
+.cuadro-contact button {
     border: none;
     border-radius: 1.25rem; 
     padding: 0.6875rem 2.1875rem; 
@@ -225,7 +240,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.cuadro button:hover {
+.cuadro-contact button:hover {
     background-color: #f99f9f;
 }
 
