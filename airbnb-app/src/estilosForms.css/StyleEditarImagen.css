@@ -1,0 +1,81 @@
+/*.editar-imagen-container {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .editar-imagen-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .editar-imagen-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .editar-imagen-tabla th, .editar-imagen-tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .editar-imagen-tabla th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .editar-imagen-btn {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  .boton{
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .editar-imagen-btn:hover {
+    background-color: #0056b3;
+  }
+  
+.edit-button {
+    background-color: #28a745;
+    color: #fff;
+    margin-right: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+.delete-button:hover {
+    background-color: #c82333;
+}
+*/
