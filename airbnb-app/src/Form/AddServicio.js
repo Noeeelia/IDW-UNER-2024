@@ -1,4 +1,4 @@
-/*import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../estilosForms.css/styleServicio.css';
 
 const AddServicio = () => {
@@ -171,5 +171,5 @@ const AddServicio = () => {
   );
 };
 
-export default AddServicio;*/
+export default AddServicio;
 

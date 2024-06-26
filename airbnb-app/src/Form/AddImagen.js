@@ -1,4 +1,4 @@
-/*// AddImagen.js
+// AddImagen.js
 import React, { useState } from 'react';
 
 const AddImagen = ({ alojamientoId, onClose, onAddImage }) => {
@@ -68,4 +68,3 @@ const AddImagen = ({ alojamientoId, onClose, onAddImage }) => {
 };
 
 export default AddImagen;
-*/
