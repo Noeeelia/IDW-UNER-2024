@@ -1,4 +1,4 @@
-/*import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 import AddImagen from './AddImagen';
 import '../estilosForms.css/StyleImagen.css'
 import '../estilosForms.css/styleForms.css';
@@ -398,6 +398,7 @@ const AddAlojamiento = () => {
           </div>
         </div>
       </section>
+      
 
       {isModalOpen && (
         <AddImagen
@@ -410,4 +411,5 @@ const AddAlojamiento = () => {
   );
 };
 
-export default AddAlojamiento;*/
+export default AddAlojamiento; 
+*/
