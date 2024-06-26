@@ -125,7 +125,7 @@ a {
 
 .linea .icons-description {
   max-width:30px;
-  max-heigth:30px;
+  max-height:30px;
   margin-right:8px;
 }
 
@@ -375,9 +375,6 @@ footer {
   .redes-logos img{
     margin: 2.5px;
   }
-  
-  .footer {
-  }
 
   .container-footer-primeralinea {
     font-size: 12px;
@@ -442,7 +439,5 @@ footer {
     margin-top: 5px;
     margin-right: 100px;
   }
-  .linea {
-    
-  }
+
 }

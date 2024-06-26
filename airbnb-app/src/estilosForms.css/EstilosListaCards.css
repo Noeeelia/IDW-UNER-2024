@@ -44,6 +44,11 @@ text-align: left;
 margin-left:10p;
 }
 
+.card-list-description p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
 .cards-list .card-list:hover{
 box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 transform: translateY(-3%);
@@ -59,6 +64,7 @@ border-radius: 20px;
 padding: 20px;
 font-weight: 600;
 text-align: center;
+font-size: 20px;
 }
 
 .cards-list .card-list a{
@@ -68,4 +74,61 @@ color: black;
 
 .boton-volver{
     margin-bottom: 30px;
+    text-align:left;
+}
+
+.volver {
+    background-color: pink;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+    .cards-list {
+        padding: 30px;
+        margin: 0px;
+    }
+    .cards-list .card-list {
+        width: 120%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-list-description {
+        padding-top: 20px;
+    }
+    .cards-list .card-list h2{
+    padding: 10px;
+    margin: 0px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    }
+    .cards-list .card-list p{
+    padding: 5px;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 14px;
+    margin: 0px;
+    }
+
+    .titulos-pages{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    .boton-volver{
+        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom:10px;
+        text-align: left;
+    }
+
+    .volver {
+        background-color: pink;
+        text-decoration: none;
+    }
+
+    /*.icons-description {
+        max-width:16px;
+    }*/
 }
