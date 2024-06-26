@@ -1,4 +1,4 @@
-/*// EditarImagen.js
+// EditarImagen.js
 import React, { useState, useEffect } from 'react';
 import '../estilosForms.css/StyleEditarImagen.css';
 import '../estilosForms.css/styleForms.css';
@@ -245,5 +245,3 @@ const EditarImagen = () => {
 };
 
 export default EditarImagen;
-
-*/

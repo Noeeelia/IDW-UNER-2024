@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import { Link, Routes, Route, useLocation } from 'react-router-dom';
 import AddTipoAlojamiento from '../Form/AddTipoAlojamiento';
 import AddAlojamiento from '../Form/AddAlojamiento';
@@ -39,4 +39,4 @@ const Administracion = () => {
   );
 };
 
-export default Administracion;*/
+export default Administracion;

@@ -1,4 +1,4 @@
-/*import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../estilosForms.css/styleForms.css';
 
 const AddTipoAlojamiento = () => {
@@ -169,6 +169,6 @@ const AddTipoAlojamiento = () => {
   );
 };
 
-export default AddTipoAlojamiento;*/
+export default AddTipoAlojamiento;
 
 

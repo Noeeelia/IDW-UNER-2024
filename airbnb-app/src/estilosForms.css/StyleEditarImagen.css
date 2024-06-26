@@ -1,4 +1,4 @@
-/*.editar-imagen-container {
+.editar-imagen-container {
     padding: 20px;
     margin: auto;
     max-width: 800px;
@@ -78,4 +78,3 @@
 .delete-button:hover {
     background-color: #c82333;
 }
-*/
