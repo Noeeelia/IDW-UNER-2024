@@ -1,0 +1,181 @@
+/* Estilos Administracion */
+.titulos-h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.mini-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-admin{
+    padding: 0;
+    text-align: center;
+}
+
+
+.nav-link-form{
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s;
+}
+
+.nav-link-form:hover {
+    background-color: rgb(234, 230, 232);
+}
+
+.nav-link-form:focus{
+    font-weight: bold;
+    background-color: pink;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 40rem;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.nav-admin .nav-link-form{
+    text-decoration: none;    
+}
+
+.cuadro {
+    padding: 20px;
+}
+
+.formulario .form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.formulario .form-group {
+    margin-bottom: 20px;
+}
+
+.formulario .label {
+    display: contents;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.formulario .casilla {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.formulario .casilla:focus {
+    border-color: #007bff;
+}
+
+.boton-container {
+    text-align: center;
+}
+
+.cuadro button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cuadro button:hover {
+    background-color: #0056b3;
+}
+
+.tabla {
+    width: 80%;
+    max-width: 80rem;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla .contenido-centrado{
+    overflow-x: auto;
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.tabla th {
+    background-color: #f7f7f7;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tabla .edit-btn {
+    background-color: #28a745;
+margin-right: 20px;
+}
+
+.tabla .edit-btn:hover {
+    background-color: #218838;
+}
+
+.tabla .delete-btn {
+    background-color: #dc3545;
+}
+
+.tabla .delete-btn:hover {
+    background-color: #c82333;
+}
+
