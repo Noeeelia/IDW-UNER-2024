@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';
+import AddImagen from './AddImagen';
+import '../estilosForms.css/StyleImagen.css'
 import '../estilosForms.css/styleForms.css';
 
 const AddAlojamiento = () => {
@@ -17,6 +19,8 @@ const AddAlojamiento = () => {
 
   const [tiposAlojamiento, setTiposAlojamiento] = useState([]);
   const [alojamientos, setAlojamientos] = useState([]);
+  const [selectedAlojamiento, setSelectedAlojamiento] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     fetchTiposAlojamiento();
@@ -42,7 +46,7 @@ const AddAlojamiento = () => {
       const response = await fetch('http://localhost:3001/alojamiento/getAlojamientos');
       if (response.ok) {
         const data = await response.json();
-        setAlojamientos(data);      // Establece los alojamientos obtenidos del backend
+        setAlojamientos(data);
       } else {
         console.error('Error al obtener alojamientos:', response.statusText);
       }
@@ -168,30 +172,46 @@ const AddAlojamiento = () => {
     });
   };
 
+  const handleDelete = async (idAlojamiento) => {
+    const confirmDelete = window.confirm('¿Está seguro de que desea eliminar este alojamiento?');
 
-  const handleDelete = async (id) => {
-    if (window.confirm('¿Estás seguro de eliminar este alojamiento?')) {
+    if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:3001/alojamiento/deleteAlojamiento/${id}`, {
+        const response = await fetch(`http://localhost:3001/alojamiento/deleteAlojamiento/${idAlojamiento}`, {
           method: 'DELETE',
         });
-  
-        if (!response.ok) {
-          throw new Error('Error al eliminar el alojamiento');
+
+        if (response.ok) {
+          setAlojamientos(alojamientos.filter(alojamiento => alojamiento.idAlojamiento !== idAlojamiento));
+          alert('Alojamiento eliminado correctamente.');
+        } else {
+          console.error('Error al eliminar el alojamiento:', response.statusText);
+          alert('Ocurrió un error al eliminar el alojamiento. Por favor, intenta nuevamente más tarde.');
         }
-  
-        // Actualizar la lista de alojamientos después de la eliminación
-        fetchAlojamientos();
-  
-        alert('Alojamiento eliminado correctamente.');
       } catch (error) {
-        console.error('Error al eliminar el alojamiento:', error);
+        console.error('Error en la conexión:', error);
         alert('Ocurrió un error al eliminar el alojamiento. Por favor, intenta nuevamente más tarde.');
       }
     }
   };
-  
-  
+
+  const openModal = (alojamiento) => {
+    setSelectedAlojamiento(alojamiento);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedAlojamiento(null);
+  };
+
+  const handleAddImage = (newImage) => {
+    setAlojamientos(alojamientos.map(alojamiento =>
+      alojamiento.idAlojamiento === newImage.idAlojamiento
+        ? { ...alojamiento, Imagenes: [...(alojamiento.Imagenes || []), newImage] }
+        : alojamiento
+    ));
+  };
 
   return (
     <>
@@ -327,14 +347,13 @@ const AddAlojamiento = () => {
               </div>
             </div>
             <div className="boton-container-alojamiento">
-            <button type="submit">
-              {formData.idAlojamiento ? 'Guardar Cambios' : 'Registrar Alojamiento'}
-            </button>
+              <button type="submit">
+                {formData.idAlojamiento ? 'Guardar Cambios' : 'Registrar Alojamiento'}
+              </button>
             </div>
           </form>
         </div>
       </section>
-
 
       <section className="tabla-alojamiento">
         <div className="contenido-centrado">
@@ -370,7 +389,8 @@ const AddAlojamiento = () => {
                     <td>
                       <button className='edit-btn' onClick={() => handleEdit(alojamiento)}>Editar</button>
                       <button className='delete-btn' onClick={() => handleDelete(alojamiento.idAlojamiento)}>Eliminar</button>
-                      </td>
+                      <button className='add-image-btn' onClick={() => openModal(alojamiento)}>Agregar Imagen</button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -378,8 +398,16 @@ const AddAlojamiento = () => {
           </div>
         </div>
       </section>
+
+      {isModalOpen && (
+        <AddImagen
+          alojamientoId={selectedAlojamiento.idAlojamiento}
+          onClose={closeModal}
+          onAddImage={handleAddImage}
+        />
+      )}
     </>
   );
 };
 
-export default AddAlojamiento;
+export default AddAlojamiento;*/
