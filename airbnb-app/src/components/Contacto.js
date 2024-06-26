@@ -34,12 +34,12 @@ const Contacto = () => {
 
   return (
     <section className="container-contacto">
-      <h2>Contáctanos</h2>
+      <h2 className='titulos-h2'>Contáctanos</h2>
       <div className="cuadro-contact">
         <p>¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte en cada paso de tu viaje. Nuestro equipo de atención al cliente está disponible las 24/7 para brindarte el apoyo que necesitas. Contáctanos a través de nuestro servicio de atención al cliente o redes sociales. ¡Estamos listos para hacer de tu próxima aventura una experiencia inolvidable!</p>
       </div>
 
-      <h2>Déjanos tu consulta</h2>
+      <h2 className='titulos-h2'>Déjanos tu consulta</h2>
       <div className="cuadro-contact">
         <form onSubmit={handleSubmit} id="form">
           <div className="grupo-form">
@@ -87,7 +87,7 @@ const Contacto = () => {
         </form>
       </div>
 
-      <h2>¿Dónde nos puedes encontrar?</h2>
+      <h2 className='titulos-h2'>¿Dónde nos puedes encontrar?</h2>
       <div className="mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d210041.5418583607!2d-58.94795894622806!3d-34.65725125101769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses-419!2sar!4v1714755616664!5m2!1ses-419!2sar"

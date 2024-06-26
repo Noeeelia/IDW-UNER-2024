@@ -13,7 +13,7 @@ const Home = () => {
       <div className="cards">
         <div className="card">
           <Link to="/casas" >
-            <img src="./images/img-Casa.png" alt="casas" />
+            <img src="./images/img-casa.png" alt="casas" />
             <h2>Casas</h2>
           </Link>
         </div>

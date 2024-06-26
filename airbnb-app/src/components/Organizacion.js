@@ -5,7 +5,7 @@ const Organizacion = () => {
   return (
     <section className="container">
       <div className="container-quienes">
-        <h2>¿Quiénes somos?</h2>
+        <h2 className='titulos-h2'>¿Quiénes somos?</h2>
         <div className="cuadro-quienes">
           <p>
             Somos Airbnb, una plataforma en línea dedicada a facilitar el
@@ -17,7 +17,7 @@ const Organizacion = () => {
           </p>
         </div>
 
-        <h2>Misión</h2>
+        <h2 className='titulos-h2'>Misión</h2>
         <div className="cuadro-quienes">
           <p>
             Nuestra misión es inspirar la exploración, fomentar la conexión
@@ -29,7 +29,7 @@ const Organizacion = () => {
           </p>
         </div>
 
-        <h2>Propósito</h2>
+        <h2 className='titulos-h2'>Propósito</h2>
         <div className="cuadro-quienes">
           <p>
             En Airbnb, creemos en el poder de la hospitalidad y en la belleza de
