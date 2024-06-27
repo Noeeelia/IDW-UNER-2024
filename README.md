@@ -15,11 +15,11 @@ La información de las entidades Alojamientos, Imágenes y Alojamiento Servicios
 
 **El proyecto pide conectar con una API** ✅
 
-●Crear, leer, actualizar,y eliminar => CRUD
-●Tipos Alojamientos
-●Alojamientos.
-●Imágenes.
-●Servicios.
+● Crear, leer, actualizar,y eliminar => CRUD
+● Tipos Alojamientos
+● Alojamientos.
+● Imágenes.
+● Servicios.
 
 ### Pre-requisitos 📋
 *Visual Studio Code
@@ -74,7 +74,7 @@ Este sitio web ha sido diseñado originalmente para pantallas de notebook y desk
 
 -HTML: Lenguaje de marcado para estructurar y presentar contenido en la web.
 
-**Backend:**
+**-Backend:**
 -Node.js:
   Nodemon: Herramienta para reiniciar automáticamente el servidor Node.js cuando se realizan cambios en el código.
   Express.js: Framework web para Node.js.
@@ -96,17 +96,19 @@ Este sitio web ha sido diseñado originalmente para pantallas de notebook y desk
   Se aprecian los diseños responsivos satisfactoriamente. Quedando las pantallas en modos responsive,  confirmadas y agregadas.
 
 ### Autores ✒️📖
-Ayala, María Belén - Colaboradora - Belén
-Basualdo, Érica - Colaboradora- Erica
-Durruty, Denise- Colaboradora- Denise
-Rivas Aguirre, Noelia- Colaboradora- Noelia
+*[Ayala, María Belén - Colaboradora](Belén)
+*[Basualdo, Érica - Colaboradora](Erica)
+*[Durruty, Denise- Colaboradora]Denise)
+*[Rivas Aguirre, Noelia- Colaboradora](Noelia)
 
 
 ### Retrospectiva y expresiones de Gratitud🎁📄 📌
    A lo largo del desarrollo del proyecto, desde la idea inicial y el primer index.html hasta lograr un CRUD efectivo, pasamos por varios desafíos. Tuvimos inconvenientes de todo tipo, no sólo con la resolución del código, sino también con el hardware (máquinas que no cumplían con las prestaciones requeridas para Node.js, máquinas que murieron en el camino, etc.), pero con voluntad y compañerismo pudimos sortear todos los obstáculos y llegar a un resultado satisfactorio. 🙌🏼✨
   El proyecto que entregamos no sólo cumple con nuestras expectativas, sino que las supera ampliamente; es más de lo que pensamos que podríamos lograr en tan poco tiempo de aprendizaje y apropiación del mismo. ☕ 🧉
   Logramos fusionar nuestros conocimientos previos con los nuevos para resolver el diseño, la arquitectura y las funcionalidades del código, amalgamamos nuestras habilidades y descubrimos otras nuevas en el camino; así que el resultado es doblemente satisfactorio para nosotras. Poder imaginar, planificar, resolver y crear un producto, un “algo” visible y funcional nos aportó seguridad y valoración personal; ganamos confianza y reforzamos nuestra autoestima durante este proceso.
-  Tenemos la certeza de que elegimos la carrera correcta. 💻 🤓🥰 **GRACIAS TOTALES**
+  Tenemos la certeza de que elegimos la carrera correcta. 💻 🤓🥰 
+  
+  **GRACIAS TOTALES**
 
 -----------------------------------------------------------------------------------------------
 
