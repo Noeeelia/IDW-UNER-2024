@@ -1,8 +1,8 @@
-⚛️ ## Trabajo Final Integrador-2024 💻
+ ## Trabajo Final Integrador-2024 💻⚛️
 INTRODUCCIÓN AL DESARROLLO WEB 1.er cuatrimestre 
 TECNICATURA UNIVERSITARIA EN DESARROLLO WEB || FCAD - UNER 
 
-###Comenzando 🚀
+### Comenzando 🚀
 Se solicita llevar a cabo la programación del cliente web. El objetivo es crear interfaces de usuario interactivas, con diseño responsivo o adaptativo que se comuniquen con una citada API, permitiendo a los usuarios explorar el catálogo de alojamientos de manera sencilla. 
 
 La información de las entidades Alojamientos, Imágenes y Alojamiento Servicios debe ser consumida desde la API Rest provista por el equipo de cátedra y actualizada según los requerimientos.
@@ -21,14 +21,14 @@ La información de las entidades Alojamientos, Imágenes y Alojamiento Servicios
 ●Imágenes.
 ●Servicios.
 
-###Pre-requisitos 📋
+### Pre-requisitos 📋
 *Visual Studio Code
 *Instalación de Node.js
 *node –version o -v
 *npm –version o -v
 *npm install nodemon (y demás dependencias a utilizar)
 
-###Instalación 🔧
+### Instalación 🔧
 **Mi primera App con React:**
 -Instalar create-react-app (de manera global):
 npm install -g create-react-app
@@ -45,7 +45,7 @@ npm start
 Podremos ver cómo se abre el navegador y se visualiza el logo de React con un fondo oscuro. 
 Allí ya estaremos aptos para comenzar nuestra propia creación.
 
-###Despliegue 📦
+### Despliegue 📦
 
 **npm run dev**
 
@@ -59,7 +59,7 @@ El sitio también cuenta con desarrollo backend en la sección “Administració
 
 Este sitio web ha sido diseñado originalmente para pantallas de notebook y desktop agregando posteriormente un corte de media queries max-425px para su correcta visualización en pantallas mobile.
 
-###Construido con 🛠️
+### Construido con 🛠️
 **Frontend:**
 -React:
   React DevTools: Extensión del navegador para depurar y analizar aplicaciones React.
@@ -89,24 +89,24 @@ Este sitio web ha sido diseñado originalmente para pantallas de notebook y desk
   NPM: Gestores de paquetes para instalar y administrar dependencias.
 
 
-###Ejecutando mejoras ⚙️
+### Ejecutando mejoras ⚙️
   Este sitio web ha sido diseñado originalmente para pantallas de notebook y desktop agregando posteriormente un corte de media queries max-425px para su correcta visualización en pantallas mobile.
 
-###Análisis de las mejoras 📱
+### Análisis de las mejoras 📱
   Se aprecian los diseños responsivos satisfactoriamente. Quedando las pantallas en modos responsive,  confirmadas y agregadas.
 
-###Autores ✒️📖
+### Autores ✒️📖
 Ayala, María Belén - Colaboradora - Belén
 Basualdo, Érica - Colaboradora- Erica
 Durruty, Denise- Colaboradora- Denise
 Rivas Aguirre, Noelia- Colaboradora- Noelia
 
 
-###Retrospectiva y expresiones de Gratitud🎁📄 📌
+### Retrospectiva y expresiones de Gratitud🎁📄 📌
    A lo largo del desarrollo del proyecto, desde la idea inicial y el primer index.html hasta lograr un CRUD efectivo, pasamos por varios desafíos. Tuvimos inconvenientes de todo tipo, no sólo con la resolución del código, sino también con el hardware (máquinas que no cumplían con las prestaciones requeridas para Node.js, máquinas que murieron en el camino, etc.), pero con voluntad y compañerismo pudimos sortear todos los obstáculos y llegar a un resultado satisfactorio. 🙌🏼✨
   El proyecto que entregamos no sólo cumple con nuestras expectativas, sino que las supera ampliamente; es más de lo que pensamos que podríamos lograr en tan poco tiempo de aprendizaje y apropiación del mismo. ☕ 🧉
   Logramos fusionar nuestros conocimientos previos con los nuevos para resolver el diseño, la arquitectura y las funcionalidades del código, amalgamamos nuestras habilidades y descubrimos otras nuevas en el camino; así que el resultado es doblemente satisfactorio para nosotras. Poder imaginar, planificar, resolver y crear un producto, un “algo” visible y funcional nos aportó seguridad y valoración personal; ganamos confianza y reforzamos nuestra autoestima durante este proceso.
-  Tenemos la certeza de que elegimos la carrera correcta. 💻 🤓🥰 ~GRACIAS TOTALES~
+  Tenemos la certeza de que elegimos la carrera correcta. 💻 🤓🥰 **GRACIAS TOTALES**
 
 -----------------------------------------------------------------------------------------------
 
