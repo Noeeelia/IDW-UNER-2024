@@ -9,17 +9,17 @@ La información de las entidades Alojamientos, Imágenes y Alojamiento Servicios
  Se debe contar con interfaces de usuario interactivas que permitan acceder a las siguientes opciones: 
  
 ■ En referencia a la empresa Airbnb-App: 
-- ● Home. 
-- ● Quienes somos 
-- ● Contacto 
+- Home. 
+-  Quienes somos 
+-  Contacto 
 
 **El proyecto pide conectar con una API** ✅
 
-- ● Crear, leer, actualizar,y eliminar => CRUD
-- ● Tipos Alojamientos
-- ● Alojamientos.
-- ● Imágenes.
-- ● Servicios.
+-  Crear, leer, actualizar,y eliminar => CRUD
+-  Tipos Alojamientos
+-  Alojamientos.
+-  Imágenes.
+-  Servicios.
 
 ### Pre-requisitos 📋
 - Visual Studio Code
@@ -30,21 +30,21 @@ La información de las entidades Alojamientos, Imágenes y Alojamiento Servicios
 
 ### Instalación 🔧
 **Mi primera App con React:**
--Instalar create-react-app (de manera global):
+- Instalar create-react-app (de manera global):
 ```bash
 npm install -g create-react-app
 ```
--Crear una nueva aplicación React:	
+- Crear una nueva aplicación React:	
  	npx create-react-app airbnb-app
  ```bash
 npm install create-react-app airbnb-app
 ``` 
   
--Navegar al directorio de la aplicación:
+- Navegar al directorio de la aplicación:
 ```bash
 cd airbnb-app
 ```
--Iniciar la aplicación React:
+- Iniciar la aplicación React:
 ```bash
 npm start
 ```
@@ -110,10 +110,13 @@ Este sitio web ha sido diseñado originalmente para pantallas de notebook y desk
 ### Análisis de las mejoras 📱
   Se aprecian los diseños responsivos satisfactoriamente. Quedando las pantallas en modos responsive,  confirmadas y agregadas.
 
-### Autores ✒️📖
-> Ayala, María Belén  
-> Basualdo, Érica  
-> Durruty, Denise 
+### Autoras ✒️📖
+> Ayala, María Belén
+>  
+> Basualdo, Érica
+> 
+> Durruty, Denise
+> 
 > Rivas Aguirre, Noelia
 
 
@@ -121,6 +124,8 @@ Este sitio web ha sido diseñado originalmente para pantallas de notebook y desk
    - A lo largo del desarrollo del proyecto, desde la idea inicial y el primer index.html hasta lograr un CRUD efectivo, pasamos por varios desafíos. Tuvimos inconvenientes de todo tipo, no sólo con la resolución del código, sino también con el hardware (máquinas que no cumplían con las prestaciones requeridas para Node.js, máquinas que murieron en el camino, etc.), pero con voluntad y compañerismo pudimos sortear todos los obstáculos y llegar a un resultado satisfactorio. 🙌🏼✨
   - El proyecto que entregamos no sólo cumple con nuestras expectativas, sino que las supera ampliamente; es más de lo que pensamos que podríamos lograr en tan poco tiempo de aprendizaje y apropiación del mismo. ☕ 🧉
   - Logramos fusionar nuestros conocimientos previos con los nuevos para resolver el diseño, la arquitectura y las funcionalidades del código, amalgamamos nuestras habilidades y descubrimos otras nuevas en el camino; así que el resultado es doblemente satisfactorio para nosotras. Poder imaginar, planificar, resolver y crear un producto, un “algo” visible y funcional nos aportó seguridad y valoración personal; ganamos confianza y reforzamos nuestra autoestima durante este proceso.
+
+    
     > Tenemos la certeza de que elegimos la carrera correcta. 💻 🤓🥰 
   
   **GRACIAS TOTALES**
