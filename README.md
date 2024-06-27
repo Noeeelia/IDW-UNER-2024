@@ -96,10 +96,10 @@ Este sitio web ha sido diseñado originalmente para pantallas de notebook y desk
   Se aprecian los diseños responsivos satisfactoriamente. Quedando las pantallas en modos responsive,  confirmadas y agregadas.
 
 ### Autores ✒️📖
-*[Ayala, María Belén - Colaboradora](Belén)
-*[Basualdo, Érica - Colaboradora](Erica)
-*[Durruty, Denise- Colaboradora]Denise)
-*[Rivas Aguirre, Noelia- Colaboradora](Noelia)
+>Ayala, María Belén
+>Basualdo, Érica
+>Durruty, Denise
+>Rivas Aguirre, Noelia
 
 
 ### Retrospectiva y expresiones de Gratitud🎁📄 📌
